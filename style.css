@@ -1,0 +1,131 @@
+   
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+}
+body{
+    background-color: rgb(97, 95, 95);
+
+}
+html{
+    font-size: 16px;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 3px 3px 5px white;
+ 
+}
+    h1:hover{
+        font-size: 4rem;
+        background-color: rgb(201, 201, 3);
+        text-shadow: 3px 3px 5px rgb(10, 10, 10);
+
+  
+}
+@media (wudth <= 767px){
+    h1{
+        font-size: 1rem;
+    }
+    h1:hover{
+        font-size: 1rem;
+    }
+}
+.gallery{
+   padding-top: 4rem;
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+   
+    
+}
+
+  
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:2rem;
+    padding: 1rem;
+    flex: none;
+    
+    
+}
+.gallery div img{
+        width:80%;
+        height:18rem;
+        filter:grayscale(100%) ;
+        -webkit-filter:grayscale(100%) ;
+        box-shadow: 2px 2px 5px 6px black, 2px 2px 5px 6px gray, 2px 2px 5px 6px whitesmoke;
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: none;
+    gap:3rem;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 70%;
+    -webkit-border-radius: 70%;
+    -moz-border-radius: 70%;
+    -ms-border-radius: 70%;
+    -o-border-radius: 70%;
+    box-shadow: 2px 2px 3px 5px azure;
+}
+.gallery-wrap{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+   
+}
+
+
+#backbtn, #nextbtn{
+    cursor: pointer;
+}
+
+@media (width<=1318px){
+    
+    h1{
+        display: block;
+    }
+}
+@media (width<=587px){
+    .gallery{
+         width: 90rem;
+        }
+        .gallery div img{
+            width:50%;
+            height:18rem;
+            
+    }
+
+}
+@media (min-width:588px) and (max-width:984px){
+    h1{
+        display: block;
+    }
+    .gallery div img{
+        width:60%;
+        height:18rem;
+        
+}
+
+} 

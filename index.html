@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>GALLERY.....</h1>
+ 
+    <div class="gallery">
+        <div>
+            <span><img src="g1.png"></span>
+            <span><img src="g2.png"></span>
+            <span><img src="g3.png"></span>
+        </div>
+        <br>
+
+        <div>
+            <span><img src="g4.png"></span>
+            <span><img src="g6.png"></span>
+            <span><img src="g7.png"></span>
+        </div>
+        <br>
+
+        <div>
+            <span><img src="g8.png"></span>
+            <span><img src="g9.png"></span>
+            <span><img src="g10.png"></span>
+        </div>
+        <br>
+
+        <div>
+            <span><img src="image1.jpg"></span>
+            <span><img src="image2.jpg"></span>
+            <span><img src="flight.png"></span>
+        </div>
+        <br>
+
+        <div>
+            <span><img src="image1.png"></span>
+            <span><img src="blog3.png"></span>
+            <span><img src="bootimage.jpg"></span>
+        </div>
+        <br>
+
+
+        <div>
+            <span><img src="image2.png"></span>
+            <span><img src="image3.png"></span>
+            <span><img src="image4.png"></span>
+        </div>
+        <br>
+
+
+        <div>
+            <span><img src="image5.png"></span>
+            <span><img src="image6.png"></span>
+            <span><img src="w5.png"></span>
+        </div>
+        <br>
+
+        <div>
+            <span><img src="g1.jpg"></span>
+            <span><img src="head.png"></span>
+            <span><img src="g2.jpg"></span>
+        </div>
+        <br>
+
+        <div>
+            <span><img src="g3.jpg"></span>
+            <span><img src="g4.jpg"></span>
+            <span><img src="g5.jpeg"></span>
+        </div>
+        <br>
+
+
+    </div>
+
+    <div class="gallery-wrap" >
+        <img src="btn2.png" id="backbtn">
+        <img src="btn1.png" id="nextbtn">
+</div>
+
+<script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backbtn = document.querySelector("#backbtn");
+    let nextbtn = document.querySelector("#nextbtn");
+    scrollContainer.addEventListener("wheel", (event) => {
+event.preventDefault();
+scrollContainer.style.scrollBehavior = "auto";
+scrollContainer.scrollLeft += event.deltaY;
+    });
+    backbtn.addEventListener("click",() => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft +=900;
+    });
+    nextbtn.addEventListener("click",() => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -=900;
+    });
+</script>
+</body>
+</html>
