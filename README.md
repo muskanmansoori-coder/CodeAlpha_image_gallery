@@ -1,0 +1,1 @@
+Image Gallery is a responsive and interactive web application built using HTML, CSS, and JavaScript. It allows users to browse images in a grid layout, with smooth scrolling and hover effects, providing an engaging user experience.
